@@ -1,0 +1,297 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 5px;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+.container-main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.resume-wrapper {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+/* Resume Left Section */
+.resume-left {
+  padding: 0 25px 0 40px;
+}
+.resume-left section {
+  text-align: left;
+}
+.career p {
+  text-align: justify;
+}
+.career > p {
+  margin-bottom: 10px;
+}
+.summury {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.summury h2 {
+  margin-top: 6px;
+  padding-left: 10px;
+}
+.resume-left section p,
+.resume-left section > ul li {
+  line-height: 1.4;
+  font-size: 14.5px;
+}
+.icon-holder {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+}
+.position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title,
+.date {
+  margin-bottom: 0;
+}
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.date,
+.company {
+  color: #4b6a78;
+}
+.company {
+  margin-bottom: 5px;
+}
+.intro {
+  margin-bottom: 5px;
+}
+.career-begining {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+/* Resume Right Section */
+.resume-right {
+  background-color: #4b6a78;
+  color: #fff;
+  padding: 0;
+}
+.profile {
+  background: #3c5560;
+  padding: 0 12px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.profile .name {
+  font-size: 32px;
+}
+.img-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 700;
+}
+.pro-tag {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact {
+  padding: 16px 10px 0 10px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.contact-details {
+  display: block;
+  line-height: 30px;
+}
+section div {
+  display: flex;
+}
+.geo-l {
+  padding-left: 9px;
+}
+.education > p,
+.other-qul > p {
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.university {
+  margin-bottom: 0;
+}
+.education,
+.other-qul,
+.language,
+.technology,
+.strengths,
+.interests {
+  padding: 30px 10px 0 10px;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.language p {
+  line-height: 0.9;
+}
+.first {
+  padding-top: 10px;
+}
+.first > a {
+  padding-left: 0;
+}
+.last {
+  margin-bottom: 5px;
+}
+.education p > span,
+.other-qul p > span,
+.language p > span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.tech-skill,
+.my-interests {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tech-skill li,
+.my-interests li {
+  padding-bottom: 8px;
+}
+.grid-top {
+  padding-top: 10px;
+}
+#grid-bottom {
+  padding-bottom: 0;
+}
+.strength {
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+.strength-summury {
+  color: rgba(255, 255, 255, 0.6);
+}
+.interests {
+  margin-bottom: 10px;
+}
+#strength-last {
+  padding-top: 0;
+}
+#summury-first {
+  margin-bottom: 8px;
+}
+#summury-last {
+  margin-bottom: 0;
+}
+/* Resume Footer */
+.footer-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.resume-footer {
+  text-align: center;
+}
+/* Media Query */
+@media screen and (max-width: 767px) {
+  .resume {
+    flex-direction: column-reverse;
+  }
+  .contact,
+  .education,
+  .other-qul,
+  .language,
+  .technology,
+  .strengths,
+  .interests {
+    padding-left: 20px;
+  }
+  .resume-left {
+    padding: 0 20px 0 20px;
+  }
+  .tech-skill,
+  .my-interests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60%;
+  }
+  #grid-top-mob1,
+  #grid-top-mob2 {
+    padding-top: 10px;
+  }
+  #grid-bottom-mob1,
+  #grid-bottom-mob2 {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile {
+    padding-left: 20px;
+  }
+}
+@media print {
+  .resume {
+    flex-direction: column-reverse;
+  }
+  .contact,
+  .education,
+  .other-qul,
+  .language,
+  .technology,
+  .strengths,
+  .interests {
+    padding-left: 20px;
+  }
+  .resume-left {
+    padding: 0 20px 0 20px;
+  }
+  .img-wrapper {
+    display: none;
+  }
+  .tech-skill,
+  .my-interests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60%;
+  }
+  #grid-top-mob1,
+  #grid-top-mob2 {
+    padding-top: 10px;
+  }
+  #grid-bottom-pr1,
+  #grid-bottom-pr2,
+  #grid-bottom-pr3 {
+    margin-bottom: 15px;
+  }
+}
